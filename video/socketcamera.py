@@ -1,9 +1,15 @@
 import socket
 import sys
 from camera import *
+from camera2 import *
+import os,signal,sys
+
+
 sock1 = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-server_address1 = ('localhost',4500)
-print "STARTING SERVER ON "+ str(server_address1)
+ip = 'localhost'
+port = 4500
+server_address1 = (ip,port)
+print "STARTING SERVER ON CAMERA:"+ str(server_address1)
 sock1.bind(server_address1)
 sock1.listen(1)
 
@@ -19,15 +25,21 @@ while 1:
             print "RECIEVED %s" %data
             data = data.split()
             if data[0] == "$start":
-                start = Main()
+                p = camera()
                 print "STARTING"
                 #gtk.main()
             elif data[0] == "$stop":
-                start.pause()
-                print "ENDING"
+                #start.pause()
+                try:
+                    #print p.pid
+                    os.kill(p.pid+1,signal.SIGTERM)
+                    #p.kill()
+                    print "PROCESS ENDED"
+                except:
+                    print >>sys.stderr,  "ERROR OCCURRED WHILE KILLING PROCESS"
                 
             else:
-                print "UNRECOGNISED DATA",client_address1
+                print >>sys.stderr,  "UNRECOGNISED DATA",client_address1
                 connection1.close()
     except:
         print "CLOSING CONNECTION"
