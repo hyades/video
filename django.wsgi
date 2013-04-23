@@ -1,8 +1,8 @@
 import os, sys  
   
   
-sys.path.append("/home/hyades/Documents/Aptana Studio 3 Workspace/video")
-sys.path.append("/home/hyades/Documents/Aptana Studio 3 Workspace/video/video")
+sys.path.append("/home/hyades/Github/video")
+sys.path.append("/home/hyades/Github/video/video")
 
 
    

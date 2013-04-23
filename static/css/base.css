@@ -1,0 +1,91 @@
+body
+{
+	position:relative;
+	background:url(../images/tile.jpg);
+	border:0 none;
+	font-size:100%;
+	margin:0px auto;
+	padding:0px;
+	border:0;
+	outline:0;
+	vertical-align:top;
+	width:900px;
+	font: normal 73%/1.6em 'Trebuchet MS', Tahoma, sans-serif;
+}
+
+.header
+{
+	background-color:#7cb942;
+	height:50px;
+	margin-top:0px;
+	border-radius: 5px;
+}
+.header h1
+{
+	color:#FFF;
+	size:30px;
+	text-align:left;
+	padding-top:12px;
+	padding-left:20px;
+	
+	
+}
+.video
+{
+	padding-top: 30px;
+	padding-left: 250px;
+}
+
+.menu
+{
+	position:relative;
+	margin-top:20px;
+	width:600px;
+	float:right;
+}
+.menu ul{
+margin: 0;
+padding: 0;
+font: bold 14px Verdana;
+list-style-type: none;
+text-align: center;
+}
+
+.menu li{
+display: inline-block;
+position:relative;
+margin: 0;
+margin-right: 35px;
+}
+
+
+.menu li a{
+display:inline-block;
+padding: 5px;
+min-width:40px;
+height:28px;
+text-decoration: none;
+font-size:18px;
+color:#7cb942;
+margin: 0 auto;
+overflow:hidden;
+-moz-transition: all 0.5s ease-in-out;
+-webkit-transition: all 0.3s ease-in-out;
+-o-transition: all 0.3s ease-in-out;
+-moz-transition: all 0.3s ease-in-out;
+-ms-transition: all 0.3s ease-in-out;
+transition: all 0.3s ease-in-out;
+}
+
+.menu li:hover a{
+color:#FFF;
+background:#7cb942;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+}
+
+.menu li a span{
+position:relative;
+top:10px;
+}
