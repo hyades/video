@@ -5,15 +5,15 @@ README
 
 DEPENDENCIES
 
-Camera:
+Camera
 1. Gstreamer gst-launch
 2. v4l2
 
-Server:
+Server
 1. Django-1.4
 2. libapache2-mod-wsgi for django deployment
 
-Client:
+Client
 1. Web brwoser compatible with HTML 5.
 2. VLC Media Player
 
