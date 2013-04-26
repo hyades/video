@@ -1,7 +1,7 @@
 import socket
 import sys
 from django.shortcuts import render_to_response,redirect
-from settings import ip
+from constants import ip
 #from django.core.context_processors import request
 
 

@@ -2,7 +2,7 @@
 
 
 ip = [
-"localhost",
+"192.168.1.101",
 "localhost",
 "localhost",
 ]
