@@ -11,8 +11,8 @@ class Server():
         host='localhost'
         port='5000'
         name = "activity_" + str(datetime.now().day) + "_" + str(datetime.now().month) + "_" + str(datetime.now().day) + "_" + str(datetime.now().hour) + "_" + str(datetime.now().minute) + "_" + str(datetime.now().second)
-        f = open(name,"w")
-        f.close()
+        #f = open(name,"w")
+        #f.close()
         
         self.command = """gst-launch  tcpclientsrc host=%s port=%s ! filesink location='/home/hyades/videologs/%s'"""  %(host , port ,name)
         print("running command: %s" % (self.command, ))

@@ -8,9 +8,17 @@
     <div class="header">
         <h1>Camera {{number}}</h1>
     </div>
+    <div class="menu">
+        <ul>
+        <li><a href="/video/">HOME</a></li>
+        <li><a href="/init{{number}}/">SETUP STREAM</a></li>
+        <li><a href="/end{{number}}/">END STREAM</a></li>
+        
+    </ul>
+    </div>
     <div class="video">
-    <video width="400" height="400" controls>
-    	<source src="http://localhost:5000" type='video/webm; codecs="vp8.0, vorbis"' >
+    <video width="320" height="240" controls>
+    	<source src="http://{{ip}}:5000" type='video/webm; codecs="vp8.0, vorbis"' >
     	
     	Your browser is outdated.
     </video>
