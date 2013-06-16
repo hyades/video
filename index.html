@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Video by hyades</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/hyades/video">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/hyades/video/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/hyades/video/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Video</h1>
+          <p>A Video Streaming System for embedded intelligent cameras</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/hyades">hyades</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h1>
+<a name="video" class="anchor" href="#video"><span class="octicon octicon-link"></span></a>video</h1>
+
+<h3>
+<a name="dependencies" class="anchor" href="#dependencies"><span class="octicon octicon-link"></span></a>DEPENDENCIES</h3>
+
+<h3>
+<a name="camera" class="anchor" href="#camera"><span class="octicon octicon-link"></span></a>Camera</h3>
+
+<ol>
+<li>Gstreamer gst-launch</li>
+<li>v4l2</li>
+</ol><h3>
+<a name="server" class="anchor" href="#server"><span class="octicon octicon-link"></span></a>Server</h3>
+
+<ol>
+<li>Django-1.4</li>
+<li>libapache2-mod-wsgi for django deployment</li>
+</ol><h3>
+<a name="client" class="anchor" href="#client"><span class="octicon octicon-link"></span></a>Client</h3>
+
+<ol>
+<li>Web brwoser compatible with HTML 5.</li>
+<li>VLC Media Player</li>
+</ol><h2>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>INSTALLATION</h2>
+
+<ol>
+<li>Configure Django on server machine.</li>
+<li>Copy the camera folder to the camera machine.</li>
+<li>On the camera, compile the files camera.c and camera-rec-socket.c and run their executables</li>
+<li>To simulate recording, run the executable of camera-rec-socket.c with arguments 
+0 = start recording
+    1 = stop recording</li>
+<li>Execute socketserver.py on the server.</li>
+</ol>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-41289176-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
